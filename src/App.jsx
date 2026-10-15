@@ -13,10 +13,11 @@ import Wishlist from './pages/Wishlist'
 import Checkout from './pages/Checkout'
 import OrderSuccess from './pages/OrderSuccess'
 import NotFound from './pages/NotFound'
+import { Hash } from 'lucide-react'
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <CartProvider>
         <WishlistProvider>
           <AnnouncementBar visible={true} onDismiss={() => {}} />
@@ -38,7 +39,7 @@ function App() {
           <Toaster position="top-right" toastOptions={{ duration: 2500 }} />
         </WishlistProvider>
       </CartProvider>
-    </BrowserRouter>
+    </HashRouter>
   )
 }
 
